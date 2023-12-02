@@ -1,0 +1,195 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* button * sorry i don't like the blue color */
+button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px 32px;
+    background-color: #202124;
+    color:#f9faf8;
+    font-weight: 600;
+    font-family:fantasy;
+    font-size: medium;
+    border-radius: 8px;
+    margin: 8% 0px;
+    white-space: nowrap;
+    display: block;
+}
+/* header */
+.header {
+    background-color: #1f2937;
+    display:flex;
+    color:white;
+    margin: 0px;
+    flex-direction: column;
+}
+
+.header-top, .header-bottom {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    color:#f9faf8;
+}
+.header-logo h1 {
+    font-size: 24px;
+}
+
+
+.header-logo img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.header-top nav a {
+    text-decoration: none;
+    color:#E5E7EB;
+    font-size: 18px;
+}
+
+.header-top nav {
+    display: flex;
+    gap: 16px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    flex-wrap: wrap;
+}
+
+.header-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-width: 40%;
+}
+
+.header-bottom h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    color:#f9faf8;
+}
+
+.header-img
+{
+    margin:8px 0px 60px 0px;
+    border: darkgreen solid 1px;
+    box-sizing: border-box;
+}
+.content-top {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* .content-top */
+.content-top h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin: 48px 0px;
+}
+
+.image-cards div img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border-color: #3882f6;
+    border: #3882f6 2px solid;
+}
+
+.image-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 36px;
+    margin-bottom: 80px;
+}
+
+.image-cards div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: medium;
+}
+/* content-mid */
+.content-mid {
+    padding: 120px 30%;
+    background-color: #E5E7EB;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+    color: #1f2937;
+}
+
+.quote-by {
+    font-weight: 700;
+    text-align: end;
+    display:inline-block;
+    width: 100%;
+}
+
+/* content-bot */
+.content-bot {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 16%;
+    background-color: #3882f6;
+    border-radius: 8px;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bot-text {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 8%;
+    gap: 8px;
+}
+
+.bot-text h1{
+    font-size: medium;
+    font-weight: 700;
+}
+
+.content-bot .bot-button{
+    margin: 4% 16%;
+}
+.bot-button button{
+    border: 2px white solid;
+    background-color:#3882f6;
+}
+/* footer */
+.footer{
+    background-color: #1f2937;
+    color:white;
+    margin: 0px;
+    font-style: italic;
+    font-family: cursive;
+    text-align: center;
+    padding: 32px;
+    font-weight: lighter;
+}

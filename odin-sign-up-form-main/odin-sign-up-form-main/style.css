@@ -1,0 +1,186 @@
+@font-face {
+    font-family: norse;
+    src: url('./font/Norse-Bold.otf');
+}
+
+:root{
+    background-color: rgb(240, 240, 240);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:visited, link, a {
+    color: inherit;
+}
+
+body {
+    display:flex;
+    flex-direction: row;
+}
+
+.right, .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    background-image: url('./img/leaves.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 33.334vw;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.left span {
+    justify-self: end;
+    margin-bottom: 2.5vh;
+    color: white;
+}
+
+.right {
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.sign-up > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sign-up > div {
+    gap: 2vw;
+}
+
+.sign-up > div > div{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px;
+    position: relative;
+    flex-direction: column;
+    /* letter-spacing: 0.1rem; */
+    gap: 0.334vh;
+}
+
+
+.logo {
+    display: flex;
+    margin-top: 20vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.logo span{
+    font-family: norse, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo img {
+    height: 10vh;
+    width: auto;
+}
+
+.content {
+    background-color: white;
+    gap: 5vh;
+}
+
+form > span {
+    display:block;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 2vh 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5vh;
+    gap: 2.5vh;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 10vh;
+    /* width: 66.667%; */
+
+}
+
+.footer {
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5vh;
+    padding-bottom: 10vh;
+}
+
+.footer button {
+    width: 25%;
+    color: white;
+    background-color:darkolivegreen;
+    font-weight: bold;
+    height: 54px;
+    width: 240px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.footer span {
+    word-wrap: break-word;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.footer a {
+    color:darkolivegreen;
+    text-decoration: none;
+    }
+
+.header > *, .footer > *, .content > * {
+    margin-left:5vw;
+}
+
+input {
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: 2px black solid;
+    padding: 4px 8px;
+}
+
+input.valid{
+    border-color:cadetblue;
+    /* box-shadow: 0 0 10px lightblue; */
+}
+
+input.invalid{
+    border-color: lightcoral;
+    /* box-shadow: 0 0 10px lightcoral; */
+}
+
+.error {
+    color: red;
+    visibility: hidden;
+/*     opacity: 0; */
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.sign-up label {
+    letter-spacing: 0.1rem; 
+}
+
+img[src="./img/error-icon.jpg"]{
+    height: 1rem;
+    width: auto;
+    padding-right: 0.25rem;
+}
+

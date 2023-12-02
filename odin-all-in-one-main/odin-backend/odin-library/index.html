@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Odin's Library</title>
+  </head>
+  <body>
+    <button type="button" id="add-book">Add Book</button>
+
+    <form id="book-submit-form" class="collapsed" method="post">
+      <label for="title">Title:</label>
+      <div>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          minlength="1"
+          minlength="50"
+          required
+        />
+        <span id="title-valid">Please Fill!</span>
+      </div>
+      <label for="author">Author:</label>
+      <div>
+        <input
+          type="text"
+          id="author"
+          name="author"
+          minlength="1"
+          minlength="50"
+          required
+        />
+        <span id="author-valid">Please Fill!</span>
+      </div>
+      <label for="pages">Pages:</label>
+      <div>
+        <input
+          type="number"
+          id="pages"
+          name="pages"
+          min="0"
+          max="9999"
+          required
+        />
+        <span id="pages-valid">0 to 9999</span>
+      </div>
+      <label for="read">Read:</label>
+      <input type="checkbox" id="read" name="read" />
+      <button type="submit" class="purple-button" id="add-new-book">
+        Add book
+      </button>
+    </form>
+
+    <div id="book-section"></div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

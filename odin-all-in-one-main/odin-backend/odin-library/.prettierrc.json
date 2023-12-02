@@ -1,0 +1,23 @@
+{
+<<<<<<< HEAD
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["*.html", "*.css", "*.scss", "*.sass", "*.less"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+=======
+"singleQuote": true,
+"overrides": [
+{
+"files": ["*.html", "*.css", "*.scss", "*.sass", "*.less"],
+"options": {
+"singleQuote": false
+}
+}
+]
+>>>>>>> fd406c786aa6e2f0226634b0d8fa279b2815b601
+}

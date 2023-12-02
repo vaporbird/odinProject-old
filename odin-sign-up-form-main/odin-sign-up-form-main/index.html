@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="./img/logo.png" alt="odin logo">
+            <span>ODIN</span>
+        </div>
+        <span>Photo by <a href="https://unsplash.com/photos/25xggax4bSA" class="italic" target="_blank">Halie West</a> on 
+        <a href="https://unsplash.com/" class="italic" target="_blank">Unsplash</a></span>
+    </div>
+
+    <div class="right">
+        <div class="header">
+            <span> This is not a real online service! You know you need something<br> like this in your life to help you realize your deepest dreams. <br>
+                Sign up now to get started.
+
+            </span>
+            <span>
+                You <em>know</em> you want to.
+            </span>
+        </div>
+
+        <div class="content">
+            <form action="post" class = 'sign-up' id = 'submit-form' novalidate>
+                <span>Let's do this!</span>
+
+                <div class="names">
+                    <div class = 'input-field'>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="John" required 
+                        pattern = '[A-Za-z]+(-[a-z]+)?' minlength = 2>
+                        <span class ='error'><img src="./img/error-icon.jpg" alt="error"> Only characters and a hyphon inbetween is allowed!</span>
+                    </div>
+                    <div class = 'input-field'>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Doe" required
+                        pattern = '[A-Za-z]+(-[a-z]+)?' minlength = 2>
+                        <span class ='error'><img src="./img/error-icon.jpg" alt="error"> Only characters and a hyphon inbetween is allowed!</span>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <div class = 'input-field'>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="JohnDoe@yahoo.com">
+                        <span class ='error'><img src="./img/error-icon.jpg" alt="error"> Invalid email!</span>
+                    </div>
+                    
+                    <div class = 'input-field'>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="80085"
+                        pattern = '[0-9]+(-[0-9]+)*' minlength = 3>
+                        <span class ='error'><img src="./img/error-icon.jpg" alt="error"> At least three numbers and optional hyphons!</span>
+                    </div>
+                    
+                </div>
+
+                <div class="passwords">
+                    <div class = 'input-field'>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required
+                        pattern = '^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#_,.])[A-Za-z\d@$!%*?&#_,.]{8,}$' minlength = 3>
+                        <span class ='error'><img src="./img/error-icon.jpg" alt="error"> Must contain big and small letter, number, symbol!</span>
+<!--                         "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" -->
+                    </div>
+                    
+                    <div class = 'input-field'>
+                        <label for="password-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="password-confirm" name="password-confirm" required>
+                        <span class ='error'><img src="./img/error-icon.jpg" alt="error"> Passwords do not match!</span>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <button type="submit" form = 'submit-form' >Create Account</button> <!-- value="Submited" -->
+            <span>Already have an account? <a href="">Log in</a></span>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

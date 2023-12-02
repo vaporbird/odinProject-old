@@ -1,0 +1,73 @@
+body {
+  background-color: mediumblue;
+  background-image: url("./img/backgroundjpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+
+button {
+  background-color: mediumblue;
+  color: whitesmoke;
+  border-radius: 6px;
+  padding: 10px 5px;
+  width: 96px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.characterClasses {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+  font-size: 24px;
+  padding-bottom: 32px;
+  margin: 0% 16%;
+  border: 1px dotted black;
+}
+
+.characterClasses span {
+  font-size: 12px;
+  padding: 0px 4px;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  float: left;
+}
+
+.characterClasses div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0% 16%;
+}
+
+.characterClasses div span {
+  align-self: flex-end;
+}
+
+.characterClasses button {
+  font-size: 12px;
+}
+
+button:disabled {
+  background-color: gray;
+}
+.gameInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: mediumblue;
+}
+.gameInfo .gameOver {
+  text-align: center;
+  color: crimson;
+  background-color: beige;
+  border-radius: 8px;
+  padding: 4px;
+}

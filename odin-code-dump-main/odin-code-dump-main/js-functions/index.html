@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    <script> 
+        function add7 (number) {
+            return +number + 7;
+        }
+
+        function multiply (num1, num2) {
+            return isNaN(+num1 * +num2) ? 
+            "Bad inputs!" : 
+            +num1 * +num2 ;
+        }
+
+        function capitalizeFirstLetter (string){
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
+        function capitalizeLastLetter (string) {
+            return string.slice(0, string.length - 1) + string.charAt(string.length - 1).toUpperCase();
+        }
+
+        alert(add7(prompt("prompt a number to add 7 with", 0)));
+        alert(multiply(
+            prompt("prompt first multiplier", 0),
+            prompt("prompt second multiplier", 0)
+            ));
+            alert(capitalizeFirstLetter(prompt("Capitalize the first letter of a  string", "abc")));
+            alert(capitalizeLastLetter(prompt("Capitalize the last letter of a  string", "abc")));
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+.canvasColDiv{
+    border: 1px solid #000000;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.options {
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.options span {
+font-size: 32px;
+
+}
+
+.canvas {
+    display: flex;
+    flex-direction: column;
+}
+
+.reload {
+    display: flex;
+    justify-self:center;
+    font-size: 18px;
+    margin-top:12px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 10px;
+}
+
+.pick-size {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.plus {
+    margin-left: 8px;
+}
